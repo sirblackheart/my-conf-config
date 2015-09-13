@@ -14,7 +14,7 @@ fi
 alias suvim="sudo -E vim"
 alias root="su -m root"
 
-((LINUX || MSYS)) && alias upgrade="sudo pacman -Syu"
+((MSYS)) && alias upgrade="sudo pacman -Syu"
 ((OSX)) && alias upgrade="brew update && brew upgrade --all"
 
 config() {
